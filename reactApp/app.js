@@ -7,7 +7,7 @@ import reducer from './reducers/index';
 
 /** TODO: write real reducer **/
 const mainReducer = (state = 5) => state;
-const store = createStore(mainReducer);
+const store = createStore(reducer);
 ReactDom.render(
   <Provider store={store}>
     <PhoneCallApp />

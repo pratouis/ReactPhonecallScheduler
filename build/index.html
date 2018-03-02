@@ -2,6 +2,59 @@
 <html>
 <head>
   <title>Phonecall Scheduler</title>
+  <style>
+      body {
+        background: #fbf5e6;
+        font-family: monaco, monospace;
+        padding-top: 80px;
+      }
+
+      table{
+        border: 6px inset rgba(123,10,20,.5);
+        border-collapse: collapse;
+        text-align: center;
+      }
+
+      thead {
+        padding: 10px;
+        border-bottom: 1px solid rgba(200,200,200,.8);
+        background: rgba(256,256,256,.5);
+      }
+      th {
+        padding: 0 1em .3em
+      }
+      thead > tr:first-child,
+      thead > tr:last-child
+      :first-child{
+        color: #ff3e96;
+      }
+
+      td {
+        border-right: 1px solid rgba(200,200,200,.5);
+        border-left: 1px solid rgba(200,200,200,.5);
+        border-collapse: collapse;
+      }
+
+      tbody > tr:nth-child(n)
+      :first-child{
+        border-bottom: 1px solid rgba(200,200,200,.5);
+        background: rgba(256,256,256,.5);
+      }
+
+
+      /* tbody > tr:nth-child(2n+2)
+      :nth-child(n+2){
+        background: #dedede;
+      } */
+      tbody > tr:nth-child(2n+2)
+      :nth-child(n+2):hover,
+      td:hover {
+        background: #F0F8FF;
+      }
+      .busy {
+        background: rgba(250,100,100,.4);
+      }
+  </style>
 </head>
 <body>
   <div id="root"></div>
